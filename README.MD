@@ -587,7 +587,7 @@ plt.show()
 
 Best accuracy achieved was 99.14 but all node amounts I tried in the dense layer were within a very small margin of that number. 
 
-#Conclusion:
+# Conclusion:
 ---
 
 After searching for the best model from scratch and comparing the process to utilizing transfer learning for sign language detection here is what I learned. First, there are insanely capable models that need almost no training for challenging tasks, and are accessible in one line of code. These models are likely larger than one you may attempt to train yourself thus requiring more memory, but is advantageous when getting started. At the very least, these pre-trained models should be considered as a baseline comparison when implementing a model for a new specific task. In this case, the models both achieved > 99% validation accuracy on detecting the correct sign language gestures which is likely due to well labeled data within a massive corpus to train on (87000 labeled images were used between training and validation). The process of determining the best hyperparameters is also a challenge when training from scratch and should be considered an added cost to be aware of. The main take away from this project is well labeled data is far more important that any model design. Later applications can include using these models to predict per frame of a video of someone gesturing all of the signs. Testing on a real world scenario will uncover whether the models require improvement. 
